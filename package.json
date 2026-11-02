@@ -1,0 +1,6 @@
+{
+  "name": "the-tech-therapists",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node test/run.mjs" }
+}

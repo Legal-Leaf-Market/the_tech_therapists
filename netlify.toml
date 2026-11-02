@@ -1,19 +1,8 @@
-# Static site, no build step. Netlify serves this folder as it is.
+# Static site, no build step. Netlify publishes only site/, so the README,
+# CLAUDE.md and tests in this repo are never served.
 [build]
-  publish = "."
+  publish = "site"
   command = ""
-
-# Repo notes are not part of the public site.
-[[redirects]]
-  from = "/CLAUDE.md"
-  to = "/404"
-  status = 404
-  force = true
-[[redirects]]
-  from = "/README.md"
-  to = "/404"
-  status = 404
-  force = true
 
 [[headers]]
   for = "/*"

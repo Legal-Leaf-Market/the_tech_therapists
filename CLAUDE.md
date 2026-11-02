@@ -20,11 +20,18 @@ process-fix business. The business plan lives in a private claude.ai doc
   (pay once, own it) without numbers.
 - **Stay dependency-free.** Plain HTML, CSS and JS, no framework, no build step,
   deployed on Netlify like the sister sites.
+- **Only `site/` is public.** `netlify.toml` publishes that folder and nothing
+  else. A page or asset goes in `site/`; notes, docs and tests stay outside it.
+  Never set `publish` back to the repo root: every file in the repo would be
+  served.
+- **Samples read as samples.** `site/sample/shadow-day.html` keeps its Sample
+  banner and its noindex tag.
 - **The voice:** plain, warm, blue collar. "Betty" is the person who keeps the
   office running; she is never the problem.
 
 ## Checking work
 
-- Serve the folder (`python3 -m http.server`) and load every page at 390px and
+- `npm test` must pass (em dashes, broken local links, publish folder, sample).
+- Serve the site (`python3 -m http.server -d site`) and load every page at 390px and
   1280px: no horizontal scroll, no console errors.
 - Check light and dark mode.
