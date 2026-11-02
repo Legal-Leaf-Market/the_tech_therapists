@@ -1,0 +1,6 @@
+{
+  "name": "the-tech-therapists",
+  "private": true,
+  "description": "Tech Therapy landing page. Plain HTML, CSS and JS, no build.",
+  "scripts": { "test": "node test/run.mjs" }
+}

@@ -1,0 +1,5 @@
+# Plain static site, no build step. Only site/ is published, so notes,
+# tests and docs at the repo root are never served.
+[build]
+  publish = "site"
+  command = ""

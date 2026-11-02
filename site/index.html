@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tech Therapy | Tools tailored to your team</title>
+<meta name="description" content="We sit with your people, find what's slowing them down, and fix it once, at a fair price. Fixed-price fixes for small businesses in Indiana.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="assets/logo.svg" alt="" width="36" height="36"><span>Tech Therapy</span></a>
+  <nav aria-label="Main">
+    <a href="#process">How it works</a>
+    <a href="#fixes">What we fix</a>
+    <a href="#cost">The cost</a>
+    <a href="#contact" class="btn small">Book intake</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+  <p class="eyebrow">Talk it out. Then we build it.</p>
+  <h1>We sit with your people, find what's slowing them down, and fix it. Once, at a fair price.</h1>
+  <p class="lede">Spreadsheets that should be one tool. Data typed into three systems. Reports that eat an afternoon. We watch a real workday, write down what hurts, and build the fix around how your team already works.</p>
+  <div class="cta-row">
+    <a class="btn" href="#contact">Book a free 30-minute intake</a>
+    <a class="btn ghost" href="shadow-day.html">See a sample diagnosis</a>
+  </div>
+</div>
+</section>
+
+<section id="process" class="band">
+  <h2>How a session works</h2>
+  <p class="sub">The therapy language is also the process. Seven steps, one fixed price.</p>
+  <ol class="steps">
+    <li><h3>Intake</h3><p>A free 30-minute call with the boss. What hurts, who carries it, what it costs.</p></li>
+    <li><h3>The session</h3><p>We sit with your person for half a day, with permission and an NDA. We watch the real day, record only with consent, and note every "I hate when this happens."</p></li>
+    <li><h3>Diagnosis</h3><p>A one-page write-up in plain English: the three biggest time drains, hours lost per week, and what each fix would take.</p></li>
+    <li><h3>Treatment plan</h3><p>A fixed price for the fix. No subscription, no renewal.</p></li>
+    <li><h3>The prototype</h3><p>Something working in about 24 hours, on sample data, shown to the person who does the job first.</p></li>
+    <li><h3>Recovery</h3><p>We build the real version around how your team already works. It is done when they sign off.</p></li>
+    <li><h3>Check-up</h3><p>A free 30-day follow-up call. Anything later is hourly, and only if you want it.</p></li>
+  </ol>
+</section>
+
+<section id="fixes">
+  <h2>What we fix</h2>
+  <ul class="cards">
+    <li><h3>Spreadsheet sprawl</h3><p>Spreadsheets and email chains that should be one simple tool.</p></li>
+    <li><h3>Double entry</h3><p>Retyping the same data into two or three systems.</p></li>
+    <li><h3>Hand-built reports</h3><p>The report the boss wants that takes hours to put together by hand.</p></li>
+    <li><h3>Confusing forms</h3><p>Websites and forms that confuse customers or staff.</p></li>
+    <li><h3>Field to office</h3><p>Paperwork between the job site and the office: claims, inspection photos, job tracking.</p></li>
+    <li><h3>The big handoff</h3><p>When a key person retires, we get what they know out of their head and into a tool.</p></li>
+  </ul>
+</section>
+
+<section class="band">
+  <h2>How we work</h2>
+  <ul class="principles">
+    <li><strong>We treat the process, not the people.</strong> The person doing the job is never the problem.</li>
+    <li><strong>Plumber, not car dealership.</strong> Patch the leak and keep the bill small.</li>
+    <li><strong>You own it.</strong> Code, logins and hosting are in your name. No lock-in.</li>
+    <li><strong>A person signs off.</strong> AI does the heavy lifting; one of us checks every piece before you see it.</li>
+    <li><strong>What you tell us stays here.</strong> Confidentiality in writing, never shared between clients.</li>
+  </ul>
+</section>
+
+<section id="cost">
+  <h2>What the slow way costs you</h2>
+  <p class="sub">Your own numbers, your own estimate. Nothing here is sent anywhere.</p>
+  <form class="calc" id="calc" novalidate>
+    <label>People who deal with it <input type="number" name="people" min="1" step="1" value="1" inputmode="numeric"></label>
+    <label>Hours each loses per week <input type="number" name="hours" min="0" step="0.5" value="3" inputmode="decimal"></label>
+    <label>Their hourly cost, wages plus overhead ($) <input type="number" name="rate" min="0" step="1" value="25" inputmode="decimal"></label>
+  </form>
+  <div class="result" id="calc-out" aria-live="polite">
+    <p class="big"><span id="out-hours">…</span> hours a year</p>
+    <p class="big"><span id="out-cost">…</span> a year</p>
+    <p class="fine">Assumes 50 working weeks. An estimate to start the intake conversation, not a quote.</p>
+  </div>
+</section>
+
+<section class="band" id="team">
+  <h2>Who you'll talk to</h2>
+  <ul class="team">
+    <li><h3>Jacob</h3><p>The intake call and the conversation with the boss. Vision, scope and the fixed price.</p></li>
+    <li><h3>Steven</h3><p>The sit-down session, project management, field and photo work.</p></li>
+  </ul>
+  <p class="fine">We use Claude, an AI assistant, for prototypes, write-ups and busywork. A person reviews everything it makes.</p>
+</section>
+
+<section id="contact">
+  <h2>Book an intake</h2>
+  <p>Thirty minutes, free, no pitch deck. Tell us what hurts.</p>
+  <div id="contact-box" class="contact" data-state="loading"><p>Loading contact details…</p></div>
+</section>
+</main>
+
+<footer>
+  <p>Tech Therapy · Indiana · "We treat the process, not the people."</p>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
